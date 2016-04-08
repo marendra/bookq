@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+        <div class="third">
+<article class="card">
+  <header>
+    <h3>User Profile</h3>
+  </header>
+ 
+ <img src="{{session.currentUser.profileImageURL}}"/>
+
+<footer>
+  <h4>{{session.currentUser.displayName}}</h4>
+</footer>
+</article>
+
+</div>
+
+<div class="third">
+  <article class="card">
+    <header>
+      <h3>Owned Locations</h3>
+      </header>
+    <h1>0</h1>
+     <footer>
+    <a class="button" {{action 'add'}}>Add</a>
+  </footer>
+  </article>
+ 
+</div>
+
+<div class="third">
+  <article class="card">
+    <header>
+      <h3>Booking Que</h3>
+      
+    </header>
+  <h1>0</h1>
+  <footer>
+    <a class="button">Detail</a>
+  </footer>
+  </article>
+</div>
+</div>
+</div>

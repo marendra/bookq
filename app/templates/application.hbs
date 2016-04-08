@@ -1,3 +1,26 @@
-<h2 id="title">Welcome to Ember</h2>
 
+    
+    <nav class="menu-top">
+  <a href="#" class="brand">
+    <img class="logo" src="/asset/picture/Bnq.png" />
+    <span>Book and Queue</span>
+  </a>
+
+  <!-- responsive-->
+  <input id="bmenub" type="checkbox" class="show">
+  <label for="bmenub" class="burger pseudo button">menu</label>
+
+  <div class="menu">
+    
+   {{#if session.isAuthenticated}}
+      {{#link-to 'dashboard'}}Dashboard{{/link-to}}
+      <a href="#" {{action "signOut"}}>Sign Out</a>
+      {{else}}
+      <a href="#" {{action "signIn" "facebook"}}>Sign in with Facebook</a>
+   {{/if}}
+  </div>
+</nav>
+<div class="container main-content">
 {{outlet}}
+</div>
+

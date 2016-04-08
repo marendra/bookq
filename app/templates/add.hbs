@@ -1,0 +1,21 @@
+<div class="addCategory">
+<div class="row">
+    <div class="col-sm-6 col-md-4">
+    <h3 class="menu-label">Add an Event</h3>
+   
+    </div>
+</div>
+
+
+<div class="row">
+ <div class="col-sm-6 col-md-4">
+    {{#x-select action="selectCategory"}}
+    {{#x-option}}Please Select Category{{/x-option}}
+  {{#x-option value="medical"}}Medical{{/x-option}}
+  {{#x-option value="food"}}Food{{/x-option}}
+  {{#x-option value="saloon"}}Saloon{{/x-option}}
+{{/x-select}}
+    </div>
+</div>
+</div>
+{{outlet}}
